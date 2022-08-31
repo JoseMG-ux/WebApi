@@ -7,6 +7,7 @@ namespace WebApi.Migrations
 {
     public partial class MigracionInicial : Migration
     {
+        
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -69,6 +70,8 @@ namespace WebApi.Migrations
                 name: "IX_Tarea_CategoriaId",
                 table: "Tarea",
                 column: "CategoriaId");
+
+          
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

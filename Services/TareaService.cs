@@ -6,11 +6,11 @@ namespace WebApi.Services
     public class TareaService : ITareaService
     {
         TareasContext context;
+
         public TareaService(TareasContext dbcontext)
         {
             context = dbcontext;
         }
-
         public IEnumerable<Tarea> Get()
         {
             return context.Tareas;

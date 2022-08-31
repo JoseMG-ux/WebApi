@@ -70,7 +70,6 @@ namespace WebApi.Persistence
                 tarea.Ignore(p => p.Resumen);
                 tarea.HasData(tareasInit);
             });
-
         }
     }
 }
